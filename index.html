@@ -1,25 +1,47 @@
-<title>Title for demo</title>
-</head>
-<body>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Menu</div>
-<div class="menu-item"><a href="index.html" class="current">Home</a></div>
-
-</td>
-<td id="layout-content">
-<div id="toptitle">
-<h1>Name for demo </h1>
-</div>
-<td align="left"><p>Job title<br />
-Job description<br />
-Address<br />
-Company name<br />
-City, Country <br /> 
-E-mail: 211demo@gmail.com</a></p>
-</td></tr></table>
-
-</body>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>My Personal Website</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Insert your personal information and background here.</p>
+      </section>
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li>Project 1</li>
+          <li>Project 2</li>
+          <li>Project 3</li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <form action="submit-form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="user_name">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="user_email">
+          <label for="message">Message:</label>
+          <textarea id="message" name="user_message"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2023 My Personal Website</p>
+    </footer>
+  </body>
 </html>
-
